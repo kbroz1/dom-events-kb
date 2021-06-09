@@ -10,8 +10,10 @@ color.addEventListener('focus', myFocusFunction, true);
 // //focus is when you are on the element, blur is when click away from the element
 color.addEventListener('blur', myBlurFunction, true);
 function myFocusFunction(){
-    document.getElementById('text').style.backgroundColor="skyBlue";
+    document.getElementById('text').style.border="3px solid black";
 }
 function myBlurFunction(){
-    document.getElementById('text').style.backgroundColor="black";
+    document.getElementById('text').style.border="3px solid green";
 }
+
+//add a border for focus

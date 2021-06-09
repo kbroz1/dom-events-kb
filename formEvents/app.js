@@ -4,3 +4,11 @@
 // element loses focus, i.e when the cursor moves away from form field
 //add an alert box that responses to the onclick alerting the
 // user before they fill out the form
+
+document.getElementById('myForm').addEventListener("focus", focusField, true);
+
+//this is not working
+
+function focusField() {
+    document.getElementById("myForm").alert = "You are about to fill out my form!";
+  }
